@@ -53,6 +53,14 @@ export const Contact = () => {
                   @another__side24
                 </span>
               </a>
+              <a href="https://www.linkedin.com/in/muhammad-syafi-i-967a7440a/" className="flex items-center gap-4 group">
+                <div className="p-3 bg-accent3 text-white brutal-border border-white rounded-lg group-hover:-translate-y-1 group-hover:shadow-brutal transition-all shrink-0">
+                  <FaLinkedin size={24} />
+                </div>
+                <span className="text-base sm:text-xl font-bold group-hover:underline break-all sm:break-normal">
+                  Muhammad Syafi'i
+                </span>
+              </a>
             </div>
           </div>
 

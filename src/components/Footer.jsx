@@ -13,13 +13,13 @@ export const Footer = () => {
         </div>
 
         <div className="flex gap-4">
-          <a href="#" className="p-3 bg-white text-border brutal-border border-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all rounded-lg">
+          <a href="https://github.com/MasMuham24" className="p-3 bg-white text-border brutal-border border-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all rounded-lg">
             <FaGithub size={24} />
           </a>
-          <a href="#" className="p-3 bg-accent4 text-border brutal-border border-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all rounded-lg">
+          <a href="https://www.linkedin.com/in/muhammad-syafi-i-967a7440a/" className="p-3 bg-accent4 text-border brutal-border border-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all rounded-lg">
             <FaLinkedin size={24} />
           </a>
-          <a href="#" className="p-3 bg-accent3 text-white brutal-border border-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all rounded-lg">
+          <a href="https://www.instagram.com/another__side24/" className="p-3 bg-accent3 text-white brutal-border border-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all rounded-lg">
             <FaInstagram size={24} />
           </a>
         </div>
