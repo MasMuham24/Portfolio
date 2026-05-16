@@ -45,7 +45,7 @@ export const Contact = () => {
                   github.com/MasMuham24
                 </span>
               </a>
-              <a href="#" className="flex items-center gap-4 group">
+              <a href="https://www.instagram.com/another__side24/" className="flex items-center gap-4 group">
                 <div className="p-3 bg-accent3 text-white brutal-border border-white rounded-lg group-hover:-translate-y-1 group-hover:shadow-brutal transition-all shrink-0">
                   <FaInstagram size={24} />
                 </div>
