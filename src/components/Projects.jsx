@@ -7,11 +7,11 @@ const projects = [
     title: "Cafe Kala Seduh Landing Page",
     desc: "Website landing page untuk cafe kala seduh",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/cafe1.png",
+    image: "/images/cafe.jpg",
     color: "bg-accent1",
     colSpan: "md:col-span-2 lg:col-span-2",
-    demoLink: "https://landing-page-rosy-ten-21.vercel.app/",
-    githubLink: 'https://github.com/MasMuham24/landing-page.git',  
+    demoLink: "https://kalaseduh.vercel.app/",
+    githubLink: 'https://github.com/MasMuham24/kalaseduh.git',  
   },
 
   {
