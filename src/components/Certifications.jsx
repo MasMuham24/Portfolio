@@ -4,7 +4,7 @@ import { Award, X } from 'lucide-react';
 
 const certs = [
   { name: '3rd PlaceLKS Web Technology Demak Regency', platform: 'Kemendikdasmen', year: '2025', color: 'bg-accent2', file: '/certs/lks2.pdf' },
-  { name: '1rd PlaceLKS Web Technology Demak Regency', platform: 'Kemendikdasmen', year: '2024', color: 'bg-accent1', file: '/certs/lks1.pdf' },
+  { name: '1st PlaceLKS Web Technology Demak Regency', platform: 'Kemendikdasmen', year: '2024', color: 'bg-accent1', file: '/certs/lks1.pdf' },
   { name: 'Digiup Bootcamp Laravel Web Programmer', platform: 'Digiup', year: '2025', color: 'bg-accent3', file: '/certs/digiup.pdf' },
   { name: 'Belajar Dasar Pemrograman Web', platform: 'Dicoding', year: '2025', color: 'bg-accent4', file: '/certs/dicoding1.pdf' },
 ];
