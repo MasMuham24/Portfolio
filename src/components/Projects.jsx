@@ -52,8 +52,16 @@ const projects = [
     image: "/images/installment.png",
     color: "bg-accent1",
     colSpan: "md:col-span-2 lg:col-span-2",
-    demoLink: "#",
     githubLink: 'https://github.com/MasMuham24/Kredit-Mobil.git',  
+  },
+  {
+    title: "Rest Api E-Rumahsakit",
+    desc: "Rest Api E-Rumahsakit",
+    tech: ["PHP", "Mysql", "Sanctum"],
+    image: "/images/rumah-sakit.png",
+    color: "bg-accent1", 
+    colSpan: "md:col-span-2 lg:col-span-2",
+    githubLink: 'https://github.com/MasMuham24/Rest-Api-e-rumahsakit.git',  
   },
 ];
 
@@ -82,6 +90,8 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
                 />
               </div>

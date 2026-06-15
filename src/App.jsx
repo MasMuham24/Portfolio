@@ -1,12 +1,15 @@
+import { lazy, Suspense } from 'react';
 import { AnimatedBackground } from './components/ui/AnimatedBackground';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Projects } from './components/Projects';
-import { Certifications } from './components/Certifications';
-import { Skills } from './components/Skills';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+
+// Lazy load below-the-fold components
+const About = lazy(() => import('./components/About').then(module => ({ default: module.About })));
+const Projects = lazy(() => import('./components/Projects').then(module => ({ default: module.Projects })));
+const Certifications = lazy(() => import('./components/Certifications').then(module => ({ default: module.Certifications })));
+const Skills = lazy(() => import('./components/Skills').then(module => ({ default: module.Skills })));
+const Contact = lazy(() => import('./components/Contact').then(module => ({ default: module.Contact })));
+const Footer = lazy(() => import('./components/Footer').then(module => ({ default: module.Footer })));
 
 function App() {
   return (
@@ -15,13 +18,17 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Projects />
-        <Certifications />
-        <Skills />
-        <Contact />
+        <Suspense fallback={<div className="min-h-screen" />}>
+          <About />
+          <Projects />
+          <Certifications />
+          <Skills />
+          <Contact />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
