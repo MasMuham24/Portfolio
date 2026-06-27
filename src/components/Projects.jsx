@@ -15,14 +15,14 @@ const projects = [
   },
 
   {
-    title: "Game Durian Runtuh",
-    desc: "Game durian runtuh",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/game.png",
+    title: "CMS SKADA",
+    desc: "Content Management System SKADA",
+    tech: ["Laravel", "Mysql"],
+    image: "/images/CMS.png",
     color: "bg-accent1",
     colSpan: "md:col-span-2 lg:col-span-2",
-    demoLink: "https://durian-runtuh.vercel.app/index.html",
-    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
+    demoLink: "https://skada.nfy.fyi",
+    githubLink: 'https://github.com/MasMuham24/CMS-SKADA.git',  
   },
 
   {
