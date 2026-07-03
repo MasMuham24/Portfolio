@@ -46,7 +46,7 @@ export const Skills = () => {
                 </div>
                 <h3 className="text-2xl font-bold">{skillGroup.category}</h3>
               </div>
-              <div className="p-6 bg-white flex-grow flex flex-wrap gap-3 content-start">
+              <div className="p-6 bg-white grow flex flex-wrap gap-3 content-start">
                 {skillGroup.items.map(item => (
                   <motion.span
                     key={item}

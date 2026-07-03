@@ -98,7 +98,7 @@ export const ProjectsPage = () => {
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
                 All Projects
               </h1>
-              <div className="h-2 flex-grow bg-border brutal-border hidden md:block"></div>
+              <div className="h-2 grow bg-border brutal-border hidden md:block"></div>
             </div>
             <p className="text-lg text-border/70 font-medium max-w-2xl">
               Kumpulan project yang sudah saya buat. Setiap project adalah
@@ -124,9 +124,9 @@ export const ProjectsPage = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
                   />
                 </div>
-                <div className="p-6 flex flex-col flex-grow bg-white">
+                <div className="p-6 flex flex-col grow bg-white">
                   <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-border/80 font-medium mb-4 flex-grow">
+                  <p className="text-border/80 font-medium mb-4 grow">
                     {project.desc}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">

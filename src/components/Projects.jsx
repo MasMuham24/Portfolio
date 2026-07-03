@@ -64,7 +64,7 @@ export const Projects = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Featured Projects
           </h2>
-          <div className="h-2 flex-grow bg-border brutal-border hidden md:block"></div>
+          <div className="h-2 grow bg-border brutal-border hidden md:block"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -87,9 +87,9 @@ export const Projects = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
                 />
               </div>
-              <div className="p-6 flex flex-col flex-grow bg-white">
+              <div className="p-6 flex flex-col grow bg-white">
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                <p className="text-border/80 font-medium mb-4 flex-grow">
+                <p className="text-border/80 font-medium mb-4 grow">
                   {project.desc}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
