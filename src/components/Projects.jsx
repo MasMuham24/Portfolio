@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -9,31 +10,17 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/cafe.jpg",
     color: "bg-accent1",
-    colSpan: "md:col-span-2 lg:col-span-2",
     demoLink: "https://kalaseduh.vercel.app/",
-    githubLink: 'https://github.com/MasMuham24/kalaseduh.git',  
+    githubLink: "https://github.com/MasMuham24/kalaseduh.git",
   },
-
   {
-    title: "Game Durian Runtuh",
-    desc: "Game durian runtuh",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/game.png",
+    title: "CMS Skada",
+    desc: "Website untuk mengelola data sekolah",
+    tech: ["Laravel", "PHP", "MySQL", "TailwindCSS"],
+    image: "/images/CMS.jpg",
     color: "bg-accent1",
-    colSpan: "md:col-span-2 lg:col-span-2",
-    demoLink: "https://durian-runtuh.vercel.app/index.html",
-    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
-  },
-
-  {
-    title: "Rest Api Job Vacancy",
-    desc: "Rest Api Job Vacancy",
-    tech: ["Laravel", "Mysql"],
-    image: "/images/api.png",
-    color: "bg-accent1",
-    colSpan: "md:col-span-2 lg:col-span-2",
-    demoLink: "#",
-    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
+    demoLink: "https://skada.nfy.fyi",
+    githubLink: "https://github.com/MasMuham24/CMS-SKADA.git",
   },
   {
     title: "Bahasa Nusantara",
@@ -41,21 +28,13 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
     image: "/images/bahasa.png",
     color: "bg-accent1",
-    colSpan: "md:col-span-2 lg:col-span-2",
     demoLink: "https://bahasa-nusantara.vercel.app/",
-    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
-  },
-  {
-    title: "Installment Car",
-    desc: "Website untuk simulasi cicilan mobil", 
-    tech: ["Laravel", "Mysql", "React"], 
-    image: "/images/installment.png",
-    color: "bg-accent1",
-    colSpan: "md:col-span-2 lg:col-span-2",
-    demoLink: "#",
-    githubLink: 'https://github.com/MasMuham24/Kredit-Mobil.git',  
+    githubLink: "https://github.com/MasMuham24/game-durian-runtuh",
   },
 ];
+
+// Only show first 3 projects on the home page
+const previewProjects = projects.slice(0, 3);
 
 export const Projects = () => {
   return (
@@ -63,12 +42,14 @@ export const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap items-center gap-4 mb-12">
           <div className="h-2 w-12 bg-border brutal-border hidden md:block"></div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Featured Projects</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Featured Projects
+          </h2>
           <div className="h-2 flex-grow bg-border brutal-border hidden md:block"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {previewProjects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -122,6 +103,21 @@ export const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* View All Projects Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex justify-center mt-12"
+        >
+          <Link
+            to="/projects"
+            className="brutal-btn bg-border text-white px-8 py-3 text-lg font-bold flex items-center gap-3 hover:-translate-y-1 transition-transform"
+          >
+            View All Projects <ArrowRight size={20} />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
