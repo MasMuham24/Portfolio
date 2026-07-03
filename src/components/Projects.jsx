@@ -14,13 +14,25 @@ const projects = [
     githubLink: "https://github.com/MasMuham24/kalaseduh.git",
   },
   {
-    title: "CMS Skada",
-    desc: "Website untuk mengelola data sekolah",
-    tech: ["Laravel", "PHP", "MySQL", "TailwindCSS"],
-    image: "/images/CMS.jpg",
+    title: "Game Durian Runtuh",
+    desc: "Game durian runtuh",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/images/game.png",
     color: "bg-accent1",
-    demoLink: "https://skada.nfy.fyi",
-    githubLink: "https://github.com/MasMuham24/CMS-SKADA.git",
+    colSpan: "md:col-span-2 lg:col-span-2",
+    demoLink: "https://durian-runtuh.vercel.app/index.html",
+    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
+  },
+
+  {
+    title: "Rest Api Job Vacancy",
+    desc: "Rest Api Job Vacancy",
+    tech: ["Laravel", "Mysql"],
+    image: "/images/api.png",
+    color: "bg-accent1",
+    colSpan: "md:col-span-2 lg:col-span-2",
+    demoLink: "#",
+    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
   },
   {
     title: "Bahasa Nusantara",
@@ -29,12 +41,19 @@ const projects = [
     image: "/images/bahasa.png",
     color: "bg-accent1",
     demoLink: "https://bahasa-nusantara.vercel.app/",
-    githubLink: "https://github.com/MasMuham24/game-durian-runtuh",
+    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
+  },
+  {
+    title: "Installment Car",
+    desc: "Website untuk simulasi cicilan mobil", 
+    tech: ["Laravel", "Mysql", "React"], 
+    image: "/images/installment.png",
+    color: "bg-accent1",
+    colSpan: "md:col-span-2 lg:col-span-2",
+    demoLink: "#",
+    githubLink: 'https://github.com/MasMuham24/Kredit-Mobil.git',  
   },
 ];
-
-// Only show first 3 projects on the home page
-const previewProjects = projects.slice(0, 3);
 
 export const Projects = () => {
   return (
@@ -63,6 +82,8 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
                 />
               </div>

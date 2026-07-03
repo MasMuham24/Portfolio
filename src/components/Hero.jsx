@@ -46,7 +46,7 @@ export const Hero = () => {
           <div className="relative w-full aspect-square max-w-[280px] sm:max-w-md mx-auto">
             <div className="absolute inset-0 bg-accent4 brutal-border rounded-full translate-x-3 sm:translate-x-4 translate-y-3 sm:translate-y-4"></div>
             <div className="absolute inset-0 bg-white brutal-border rounded-full flex items-center justify-center overflow-hidden">
-              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John&backgroundColor=transparent" alt="Avatar" className="w-full h-full object-cover p-6 sm:p-8" />
+              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John&backgroundColor=transparent" alt="Avatar" loading="eager" fetchpriority="high" className="w-full h-full object-cover p-6 sm:p-8" />
             </div>
             
             {/* Floating badges */}

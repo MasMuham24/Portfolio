@@ -10,7 +10,9 @@ export const Contact = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+            Let's Connect
+          </h2>
           <p className="text-xl font-medium">
             Have a project in mind or just want to chat?
           </p>
@@ -45,7 +47,10 @@ export const Contact = () => {
                   github.com/MasMuham24
                 </span>
               </a>
-              <a href="https://www.instagram.com/another__side24/" className="flex items-center gap-4 group">
+              <a
+                href="https://www.instagram.com/another__side24/"
+                className="flex items-center gap-4 group"
+              >
                 <div className="p-3 bg-accent3 text-white brutal-border border-white rounded-lg group-hover:-translate-y-1 group-hover:shadow-brutal transition-all shrink-0">
                   <FaInstagram size={24} />
                 </div>
@@ -53,7 +58,10 @@ export const Contact = () => {
                   @another__side24
                 </span>
               </a>
-              <a href="https://www.linkedin.com/in/muhammad-syafi-i-967a7440a/" className="flex items-center gap-4 group">
+              <a
+                href="https://www.linkedin.com/in/muhammad-syafi-i-967a7440a/"
+                className="flex items-center gap-4 group"
+              >
                 <div className="p-3 bg-accent3 text-white brutal-border border-white rounded-lg group-hover:-translate-y-1 group-hover:shadow-brutal transition-all shrink-0">
                   <FaLinkedin size={24} />
                 </div>
@@ -65,7 +73,11 @@ export const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <form className="space-y-6 flex flex-col justify-center">
+          <form
+            action="https://formsubmit.co/muhammadsyafiin950@gmail.com"
+            method="POST"
+            className="space-y-6 flex flex-col justify-center"
+          >
             <div className="space-y-2">
               <label htmlFor="name" className="text-lg font-bold">
                 Name
@@ -73,10 +85,13 @@ export const Contact = () => {
               <input
                 type="text"
                 id="name"
+                name="name"
+                required
                 placeholder="John Doe"
-                className="w-full px-4 py-3 brutal-border rounded-lg focus:outline-none focus:shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] transition-shadow bg-bg"
+                className="w-full px-4 py-3 brutal-border rounded-lg"
               />
             </div>
+
             <div className="space-y-2">
               <label htmlFor="email" className="text-lg font-bold">
                 Email
@@ -84,26 +99,32 @@ export const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
+                required
                 placeholder="john@example.com"
-                className="w-full px-4 py-3 brutal-border rounded-lg focus:outline-none focus:shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] transition-shadow bg-bg"
+                className="w-full px-4 py-3 brutal-border rounded-lg"
               />
             </div>
+
             <div className="space-y-2">
               <label htmlFor="message" className="text-lg font-bold">
                 Message
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows="4"
+                required
                 placeholder="Tell me about your project..."
-                className="w-full px-4 py-3 brutal-border rounded-lg focus:outline-none focus:shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] transition-shadow bg-bg resize-none"
-              ></textarea>
+                className="w-full px-4 py-3 brutal-border rounded-lg resize-none"
+              />
             </div>
+
             <button
               type="submit"
               className="brutal-btn bg-accent4 w-full flex items-center justify-center gap-2 py-4 text-xl"
             >
-              <Send size={24} /> Send Message
+              Send Message
             </button>
           </form>
         </div>
