@@ -1,30 +1,17 @@
-<<<<<<< HEAD
-import { Routes, Route } from "react-router-dom";
-import { AnimatedBackground } from "./components/ui/AnimatedBackground";
-import { Navbar } from "./components/Navbar";
-import { Hero } from "./components/Hero";
-import { About } from "./components/About";
-import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
-import { Certifications } from "./components/Certifications";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { ProjectsPage } from "./pages/ProjectsPage";
-import { CertificationsPage } from "./pages/CertificationsPage";
-=======
 import { lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { AnimatedBackground } from './components/ui/AnimatedBackground';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 
-// Lazy load below-the-fold components
-const About = lazy(() => import('./components/About').then(module => ({ default: module.About })));
-const Projects = lazy(() => import('./components/Projects').then(module => ({ default: module.Projects })));
-const Certifications = lazy(() => import('./components/Certifications').then(module => ({ default: module.Certifications })));
-const Skills = lazy(() => import('./components/Skills').then(module => ({ default: module.Skills })));
-const Contact = lazy(() => import('./components/Contact').then(module => ({ default: module.Contact })));
-const Footer = lazy(() => import('./components/Footer').then(module => ({ default: module.Footer })));
->>>>>>> 7512ac605be5de5a09f30df1cc67f4d27803b869
+const About = lazy(() => import('./components/About').then(m => ({ default: m.About })));
+const Projects = lazy(() => import('./components/Projects').then(m => ({ default: m.Projects })));
+const Certifications = lazy(() => import('./components/Certifications').then(m => ({ default: m.Certifications })));
+const Skills = lazy(() => import('./components/Skills').then(m => ({ default: m.Skills })));
+const Contact = lazy(() => import('./components/Contact').then(m => ({ default: m.Contact })));
+const Footer = lazy(() => import('./components/Footer').then(m => ({ default: m.Footer })));
+const ProjectsPage = lazy(() => import('./pages/ProjectsPage').then(m => ({ default: m.ProjectsPage })));
+const CertificationsPage = lazy(() => import('./pages/CertificationsPage').then(m => ({ default: m.CertificationsPage })));
 
 function HomePage() {
   return (
@@ -33,13 +20,6 @@ function HomePage() {
       <Navbar />
       <main>
         <Hero />
-<<<<<<< HEAD
-        <About />
-        <Skills />
-        <Projects />
-        <Certifications />
-        <Contact />
-=======
         <Suspense fallback={<div className="min-h-screen" />}>
           <About />
           <Projects />
@@ -47,7 +27,6 @@ function HomePage() {
           <Skills />
           <Contact />
         </Suspense>
->>>>>>> 7512ac605be5de5a09f30df1cc67f4d27803b869
       </main>
       <Suspense fallback={null}>
         <Footer />
@@ -58,11 +37,13 @@ function HomePage() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/projects" element={<ProjectsPage />} />
-      <Route path="/certifications" element={<CertificationsPage />} />
-    </Routes>
+    <Suspense fallback={<div className="min-h-screen" />}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/certifications" element={<CertificationsPage />} />
+      </Routes>
+    </Suspense>
   );
 }
 

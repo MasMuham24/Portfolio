@@ -55,6 +55,8 @@ const projects = [
   },
 ];
 
+const previewProjects = projects.slice(0, 3);
+
 export const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4 md:px-8 relative">
