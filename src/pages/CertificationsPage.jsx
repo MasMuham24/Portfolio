@@ -16,7 +16,7 @@ const certs = [
   {
     name: "1st Place LKS Web Technology Demak Regency",
     platform: "Kemendikdasmen",
-    year: "2024",
+    year: "2026",
     color: "bg-accent1",
     file: "/certs/lks1.pdf",
   },
