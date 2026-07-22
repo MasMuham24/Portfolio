@@ -60,6 +60,15 @@ const projects = [
     demoLink: "#",
     githubLink: "https://github.com/MasMuham24/CMS-SKADA.git",
   },
+  {
+    title: "Sistem E-Arsip",
+    desc: "Sistem E-Arsip",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwindcss"],
+    image: "/images/arsip.png",
+    color: "bg-accent1",
+    demoLink: "http://e-arsip.page.gd/",
+    githubLink: "https://github.com/MasMuham24/e-arsip.git",
+  },
 ];
 
 export const ProjectsPage = () => {
