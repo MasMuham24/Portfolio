@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 const projects = [
   {
     title: "Cafe Kala Seduh Landing Page",
-    desc: "Website landing page untuk cafe kala seduh",
+    desc: "A stylish café website focused on showcasing coffee, menus, and brand identity.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/cafe.jpg",
     color: "bg-accent1",
@@ -17,7 +17,7 @@ const projects = [
   }, 
   {
     title: "Rest Api Job Vacancy",
-    desc: "Rest Api Job Vacancy",
+    desc: "A RESTful API for managing job vacancies, applications, and recruitment data.",
     tech: ["Laravel", "Mysql"],
     image: "/images/api.png",
     color: "bg-accent1",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Bahasa Nusantara",
-    desc: "Website untuk belajar bahasa daerah",
+    desc: "An online dictionary for exploring and preserving Indonesia's diverse regional languages.",
     tech: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
     image: "/images/bahasa.png",
     color: "bg-accent1",
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "Installment Car",
-    desc: "Website untuk simulasi cicilan mobil",
+    desc: "A Laravel 11 and React application for car installment simulation with finance calculation.",
     tech: ["Laravel", "Mysql", "React"],
     image: "/images/installment.png",
     color: "bg-accent1",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: "CMS Skada",
-    desc: "Website untuk mengelola data sekolah",
+    desc: "A modern Content Management System built with Laravel, Tailwind CSS, MySQL, and JavaScript.",
     tech: ["Laravel", "PHP", "MySQL", "TailwindCSS"],
     image: "/images/CMS.jpg",
     color: "bg-accent1",
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: "Restful API e-rumahsakit",
-    desc: "Restful API untuk mengelola data rumah sakit",
+    desc: "A RESTful API for hospital management built with Laravel, Sanctum, and MySQL.",
     tech: ["Laravel", "PHP", "MySQL"],
     image: "/images/erumahsakit.png",
     color: "bg-accent1",
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     title: "Sistem E-Arsip",
-    desc: "Sistem E-Arsip",
+    desc: "A Laravel 11 web application for secure digital archive and document management.",
     tech: ["Laravel", "PHP", "MySQL", "Tailwindcss"],
     image: "/images/arsip.png",
     color: "bg-accent1",
