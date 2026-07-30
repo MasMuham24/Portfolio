@@ -57,7 +57,7 @@ export const CertificationsPage = () => {
             to="/"
             className="brutal-btn bg-white py-2 text-sm flex gap-2 items-center"
           >
-            <ArrowLeft size={18} /> Back to Home
+            <ArrowLeft size={18} />
           </Link>
         </div>
       </nav>
