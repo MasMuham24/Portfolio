@@ -10,9 +10,6 @@ export const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="inline-block brutal-border bg-accent2 px-4 py-1 mb-6 font-bold transform -rotate-2 text-sm md:text-base">
-            👋 Hello World
-          </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
             I'm <span className="text-white bg-border px-2 inline-block -rotate-1 brutal-border border-white">Muhammad Syafi'i</span>
             <br />

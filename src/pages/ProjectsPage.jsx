@@ -14,7 +14,7 @@ const projects = [
     color: "bg-accent1",
     demoLink: "https://kalaseduh.vercel.app/",
     githubLink: "https://github.com/MasMuham24/kalaseduh.git",
-  }, 
+  },
   {
     title: "Rest Api Job Vacancy",
     desc: "A RESTful API for managing job vacancies, applications, and recruitment data.",
@@ -69,6 +69,24 @@ const projects = [
     demoLink: "http://e-arsip.page.gd/",
     githubLink: "https://github.com/MasMuham24/e-arsip.git",
   },
+  {
+    title: "Car Rental",
+    desc: "A modern and responsive Car Rental Landing Page built with Laravel and Tailwind CSS. This project is designed to showcase a car rental business with a clean user interface, smooth navigation, and mobile-friendly experience.",
+    tech: ["HTML", "CSS", "Javascript"],
+    image: "/images/rental.png",
+    color: "bg-accent1",
+    demoLink: "https://rental27.vercel.app/",
+    githubLink: "https://github.com/MasMuham24/rental-mobil.git",
+  },
+  {
+    title: "Batik Nusantara",
+    desc: "A modern and responsive landing page built with Laravel and Tailwind CSS to showcase Indonesia's rich batik heritage. The website features a clean design, product highlights, company information, and a mobile-friendly user experience.",
+    tech: ["HTML", "CSS", "Javascript"],
+    image: "/images/batik.png",
+    color: "bg-accent1",
+    demoLink: "https://batik-nusantara-orpin.vercel.app/",
+    githubLink: "https://github.com/MasMuham24/batik-nusantara.git",
+  },
 ];
 
 export const ProjectsPage = () => {
@@ -87,36 +105,36 @@ export const ProjectsPage = () => {
           </Link>
           <Link
             to="/"
-            className="brutal-btn bg-white py-2 text-sm flex gap-2 items-center"
+            className="brutal-btn bg-white py-1.5 text-xs flex gap-2 items-center"
           >
-            <ArrowLeft size={18} /> Back to Home
+            <ArrowLeft size={14} />
           </Link>
         </div>
       </nav>
 
-      <main className="pt-28 pb-20 px-4 md:px-8">
+      <main className="pt-20 pb-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-12"
+            className="mb-8"
           >
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <div className="h-2 w-12 bg-border brutal-border hidden md:block"></div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                 All Projects
               </h1>
               <div className="h-2 grow bg-border brutal-border hidden md:block"></div>
             </div>
-            <p className="text-lg text-border/70 font-medium max-w-2xl">
+            <p className="text-base sm:text-lg text-border/70 font-medium max-w-2xl">
               Kumpulan project yang sudah saya buat. Setiap project adalah
               perjalanan belajar dan eksplorasi teknologi baru.
             </p>
           </motion.div>
 
           {/* Project Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 lg:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
@@ -125,7 +143,7 @@ export const ProjectsPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className={`brutal-card flex flex-col overflow-hidden group ${project.color}`}
               >
-                <div className="relative h-48 sm:h-64 overflow-hidden brutal-border-b border-b-4">
+                <div className="relative h-40 sm:h-48 lg:h-64 overflow-hidden brutal-border-b border-b-4">
                   <div className="absolute inset-0 bg-border/20 group-hover:bg-transparent transition-colors z-10"></div>
                   <img
                     src={project.image}
@@ -133,22 +151,24 @@ export const ProjectsPage = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
                   />
                 </div>
-                <div className="p-6 flex flex-col grow bg-white">
-                  <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-border/80 font-medium mb-4 grow">
+                <div className="p-4 sm:p-5 lg:p-6 flex flex-col grow bg-white">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-border/80 font-medium mb-4 grow">
                     {project.desc}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                     {project.tech.map((t) => (
                       <span
                         key={t}
-                        className="px-3 py-1 bg-bg brutal-border text-sm font-bold"
+                        className="px-2 py-1 bg-bg brutal-border text-xs sm:text-sm font-bold"
                       >
                         {t}
                       </span>
                     ))}
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                     <a
                       href={project.demoLink}
                       target="_blank"
