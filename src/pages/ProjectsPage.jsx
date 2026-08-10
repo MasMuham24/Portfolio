@@ -87,6 +87,15 @@ const projects = [
     demoLink: "https://batik-nusantara-orpin.vercel.app/",
     githubLink: "https://github.com/MasMuham24/batik-nusantara.git",
   },
+  {
+    title: "SiPelajar",
+    desc: "SiPelajar is a web-based School Management System designed to simplify academic administration. It provides separate dashboards and permissions for Administrators, Teachers, and Students, making school management more organized and efficient.",
+    tech: ["Laravel", "MySQL", "Bootstrap"],
+    image: "/images/SiPelajar.png",
+    color: "bg-accent1",
+    demoLink: "https://sipelajar.page.gd",
+    githubLink: "https://github.com/MasMuham24/Sipelajar .git",
+  }, 
 ];
 
 export const ProjectsPage = () => {
