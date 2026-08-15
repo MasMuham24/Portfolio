@@ -58,7 +58,7 @@ const projects = [
     image: "/images/erumahsakit.png",
     color: "bg-accent1",
     demoLink: "#",
-    githubLink: "https://github.com/MasMuham24/CMS-SKADA.git",
+    githubLink: "https://github.com/MasMuham24/Rest-Api-e-rumahsakit.git",
   },
   {
     title: "Sistem E-Arsip",
