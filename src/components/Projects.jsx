@@ -32,7 +32,7 @@ const projects = [
     color: "bg-accent1",
     colSpan: "md:col-span-2 lg:col-span-2",
     demoLink: "#",
-    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
+    githubLink: 'https://github.com/MasMuham24/Job-Vacancy.git',  
   },
   {
     title: "Bahasa Nusantara",
@@ -41,7 +41,7 @@ const projects = [
     image: "/images/bahasa.png",
     color: "bg-accent1",
     demoLink: "https://bahasa-nusantara.vercel.app/",
-    githubLink: 'https://github.com/MasMuham24/game-durian-runtuh',  
+    githubLink: 'https://github.com/MasMuham24/BahasaNusantara.git',  
   },
   {
     title: "Installment Car",

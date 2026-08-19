@@ -6,9 +6,11 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         
         <div className="text-center md:text-left">
-          <h2 className="text-3xl font-bold mb-2">Muhammad Syafi.</h2>
+          <h2 className="text-3xl font-bold mb-2">Muhammad Syafi'i</h2>
           <p className="font-medium text-bg/80 max-w-xs">
-            "Design is not just what it looks like and feels like. Design is how it works."
+            Jasa pembuatan website profesional - landing page, company profile,
+            toko online, web app, dan REST API dengan React, Laravel &amp;
+            MySQL.
           </p>
         </div>
 
@@ -27,7 +29,7 @@ export const Footer = () => {
       </div>
       
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t-2 border-white/20 text-center font-medium flex flex-col md:flex-row justify-between items-center gap-4">
-        <p>&copy; {new Date().getFullYear()} Muhamad Syafi'i. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Muhammad Syafi'i - Programmergabut.id. All rights reserved.</p>
       </div>
     </footer>
   );

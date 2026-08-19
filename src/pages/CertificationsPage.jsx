@@ -4,6 +4,7 @@ import { Award, X, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AnimatedBackground } from "../components/ui/AnimatedBackground";
 import { Footer } from "../components/Footer";
+import { useSeo } from "../utils/seo";
 
 const certs = [
   {
@@ -37,6 +38,7 @@ const certs = [
 ];
 
 export const CertificationsPage = () => {
+  useSeo('/certifications');
   const [selectedFile, setSelectedFile] = useState(null);
   const isPdf = selectedFile?.toLowerCase().endsWith(".pdf");
 
@@ -51,7 +53,7 @@ export const CertificationsPage = () => {
             to="/"
             className="text-2xl font-bold brutal-border bg-accent1 px-4 py-1 inline-block -rotate-2 hover:rotate-0 transition-transform cursor-pointer shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]"
           >
-            Programergabut.id
+            Programmergabut.id
           </Link>
           <Link
             to="/"

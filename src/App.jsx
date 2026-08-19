@@ -3,17 +3,21 @@ import { Routes, Route } from 'react-router-dom';
 import { AnimatedBackground } from './components/ui/AnimatedBackground';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { useSeo } from './utils/seo';
 
 const About = lazy(() => import('./components/About').then(m => ({ default: m.About })));
+const Services = lazy(() => import('./components/Services').then(m => ({ default: m.Services })));
 const Projects = lazy(() => import('./components/Projects').then(m => ({ default: m.Projects })));
 const Certifications = lazy(() => import('./components/Certifications').then(m => ({ default: m.Certifications })));
 const Skills = lazy(() => import('./components/Skills').then(m => ({ default: m.Skills })));
+const Faq = lazy(() => import('./components/Faq').then(m => ({ default: m.Faq })));
 const Contact = lazy(() => import('./components/Contact').then(m => ({ default: m.Contact })));
 const Footer = lazy(() => import('./components/Footer').then(m => ({ default: m.Footer })));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage').then(m => ({ default: m.ProjectsPage })));
 const CertificationsPage = lazy(() => import('./pages/CertificationsPage').then(m => ({ default: m.CertificationsPage })));
 
 function HomePage() {
+  useSeo('/');
   return (
     <div className="relative selection:bg-accent1 selection:text-border">
       <AnimatedBackground />
@@ -22,9 +26,11 @@ function HomePage() {
         <Hero />
         <Suspense fallback={<div className="min-h-screen" />}>
           <About />
+          <Services />
           <Projects />
           <Certifications />
           <Skills />
+          <Faq />
           <Contact />
         </Suspense>
       </main>

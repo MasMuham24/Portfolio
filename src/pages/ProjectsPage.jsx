@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AnimatedBackground } from "../components/ui/AnimatedBackground";
 import { Footer } from "../components/Footer";
+import { useSeo } from "../utils/seo";
 
 const projects = [
   {
@@ -99,6 +100,7 @@ const projects = [
 ];
 
 export const ProjectsPage = () => {
+  useSeo('/projects');
   return (
     <div className="relative selection:bg-accent1 selection:text-border min-h-screen">
       <AnimatedBackground />
@@ -110,7 +112,7 @@ export const ProjectsPage = () => {
             to="/"
             className="text-2xl font-bold brutal-border bg-accent1 px-4 py-1 inline-block -rotate-2 hover:rotate-0 transition-transform cursor-pointer shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]"
           >
-            Programergabut.id
+            Programmergabut.id
           </Link>
           <Link
             to="/"

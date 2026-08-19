@@ -26,18 +26,20 @@ export const About = () => {
             className="space-y-6 text-lg font-medium"
           >
             <p className="bg-bg p-6 brutal-card">
-              I am a passionate{" "}
+              Saya{" "}
               <span className="font-bold bg-accent1 px-1 brutal-border">
-                Fullstack Web Developer
-              </span>{" "}
-              with a strong focus on creating dynamic, responsive, and
-              user-centric web applications.
+                Muhammad Syafi'i
+              </span>
+              , seorang{" "}
+              <span className="font-bold">Fullstack Web Developer</span> asal
+              Demak, Jawa Tengah, Indonesia. Saya fokus membuat website
+              responsif, cepat, dan sesuai kebutuhan bisnis Anda.
             </p>
             <p className="bg-bg p-6 brutal-card">
               My journey in web development began in 7th grade, and since then,
               I've been obsessed with bridging the gap between beautiful design
               and functional code. I specialize in the React ecosystem and
-              modern backend frameworks.
+              modern backend frameworks such as Laravel.
             </p>
             <div className="brutal-card p-6 bg-accent2">
               <h3 className="text-2xl font-bold mb-2">Experience Focus</h3>

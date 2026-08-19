@@ -10,20 +10,20 @@ export const Contact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
-            Let's Connect
+            Pesan Jasa Website Sekarang
           </h2>
           <p className="text-xl font-medium">
-            Have a project in mind or just want to chat?
+            Konsultasi gratis - ceritakan kebutuhan website Anda!
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 bg-white brutal-card p-8 md:p-12">
           {/* Social Links */}
           <div className="space-y-8">
-            <h3 className="text-3xl font-bold">Reach Out Directly</h3>
+            <h3 className="text-3xl font-bold">Hubungi Saya</h3>
             <p className="text-lg font-medium text-border/80">
-              I'm always open to discussing new projects, creative ideas, or
-              opportunities to be part of your visions.
+              Saya selalu terbuka untuk project baru, ide kreatif, atau
+              kesempatan bekerja sama membuat website impian Anda.
             </p>
 
             <div className="flex flex-col gap-4">
@@ -38,7 +38,7 @@ export const Contact = () => {
                   muhammadsyafiin950@gmail.com
                 </span>
               </a>
-              <a href="#" className="flex items-center gap-4 group">
+              <a href="https://github.com/MasMuham24" className="flex items-center gap-4 group">
                 <div className="p-3 bg-white brutal-border rounded-lg group-hover:-translate-y-1 group-hover:shadow-brutal transition-all shrink-0">
                   <FaGithub size={24} />
                 </div>

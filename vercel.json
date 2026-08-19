@@ -3,6 +3,8 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
+    { "source": "/projects", "destination": "/projects/index.html" },
+    { "source": "/certifications", "destination": "/certifications/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

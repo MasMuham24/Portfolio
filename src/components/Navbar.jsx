@@ -6,7 +6,9 @@ import { cn } from "../utils/cn";
 
 const scrollItems = [
   { name: "About", to: "about" },
+  { name: "Layanan", to: "services" },
   { name: "Skills", to: "skills" },
+  { name: "FAQ", to: "faq" },
   { name: "Contact", to: "contact" },
 ];
 
@@ -16,7 +18,7 @@ const routerItems = [
 ];
 
 // Ordered list for display (maintaining visual order in navbar)
-const navOrder = ["About", "Projects", "Certification", "Skills", "Contact"];
+const navOrder = ["About", "Layanan", "Projects", "Certification", "Skills", "FAQ", "Contact"];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,7 +93,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-2xl font-bold brutal-border bg-accent1 px-4 py-1 inline-block -rotate-2 hover:rotate-0 transition-transform cursor-pointer shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
           <ScrollLink to="hero" smooth={true} duration={500}>
-            Programergabut.id
+            Programmergabut.id
           </ScrollLink>
         </div>
 

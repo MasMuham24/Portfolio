@@ -11,24 +11,33 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            I'm <span className="text-white bg-border px-2 inline-block -rotate-1 brutal-border border-white">Muhammad Syafi'i</span>
-            <br />
+            Jasa{" "}
             <span className="relative">
-              Fullstack
+              Pembuatan
               <svg className="absolute w-full h-4 -bottom-1 left-0 text-accent1" viewBox="0 0 100 20" preserveAspectRatio="none">
                 <path d="M0 15 Q 50 0 100 15" stroke="currentColor" strokeWidth="8" fill="none" />
               </svg>
-            </span> Developer   
-          </h1>  
+            </span>{" "}
+            Website
+            <br />
+            oleh{" "}
+            <span className="text-white bg-border px-2 inline-block -rotate-1 brutal-border border-white">
+              Muhammad Syafi'i
+            </span>
+          </h1>
           <p className="text-lg sm:text-xl font-medium mb-8 max-w-lg leading-relaxed">
-            I build modern, responsive, and visually striking web experiences using cutting-edge technologies. Welcome to my creative space.
+            Fullstack Developer dari Demak, Jawa Tengah. Programmergabut.id
+            menyediakan <strong>jasa pembuatan website</strong> profesional:
+            landing page, toko online, web app, dan REST API menggunakan React,
+            Laravel, dan MySQL. Pemenang{" "}
+            <strong>LKS Web Technology</strong>.
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-4">
             <Link to="projects" smooth={true} duration={500} className="brutal-btn bg-accent1 text-center">
-              View Projects
+              Lihat Projek
             </Link>
             <Link to="contact" smooth={true} duration={500} className="brutal-btn bg-white text-center">
-              Contact Me
+              Pesan Jasa Website
             </Link>
           </div>
         </motion.div>
@@ -43,7 +52,7 @@ export const Hero = () => {
           <div className="relative w-full aspect-square max-w-70 sm:max-w-md mx-auto">
             <div className="absolute inset-0 bg-accent4 brutal-border rounded-full translate-x-3 sm:translate-x-4 translate-y-3 sm:translate-y-4"></div>
             <div className="absolute inset-0 bg-white brutal-border rounded-full flex items-center justify-center overflow-hidden">
-              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John&backgroundColor=transparent" alt="Avatar" loading="eager" fetchpriority="high" className="w-full h-full object-cover p-6 sm:p-8" />
+              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John&backgroundColor=transparent" alt="Muhammad Syafi'i - Fullstack Web Developer dan penyedia jasa pembuatan website" loading="eager" fetchpriority="high" className="w-full h-full object-cover p-6 sm:p-8" />
             </div>
             
             {/* Floating badges */}
