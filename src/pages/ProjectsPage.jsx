@@ -6,74 +6,97 @@ import { AnimatedBackground } from "../components/ui/AnimatedBackground";
 import { Footer } from "../components/Footer";
 import { useSeo } from "../utils/seo";
 
-const projects = [
+const allProjects = [
   {
-    title: "Cafe Kala Seduh Landing Page",
-    desc: "A stylish café website focused on showcasing coffee, menus, and brand identity.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: "/images/cafe.jpg",
+    title: "SiPelajar",
+    subtitle: "School Management & Attendance System",
+    desc: "A Laravel-based school management platform for managing students, teachers, attendance, assignments, grades, and school locations.",
+    tech: ["Laravel", "Blade", "MySQL", "Tailwind CSS"],
+    image: "/images/SiPelajar.png",
     color: "bg-accent1",
-    demoLink: "https://kalaseduh.vercel.app/",
-    githubLink: "https://github.com/MasMuham24/kalaseduh.git",
+    demoLink: "https://sipelajar.page.gd",
+    githubLink: "https://github.com/MasMuham24/Sipelajar",
   },
   {
-    title: "Rest Api Job Vacancy",
-    desc: "A RESTful API for managing job vacancies, applications, and recruitment data.",
-    tech: ["Laravel", "Mysql"],
-    image: "/images/api.png",
-    color: "bg-accent1",
-    demoLink: "#",
-    githubLink: "https://github.com/MasMuham24/Job-Vacancy.git",
+    title: "e-Absensi / HRIS",
+    subtitle: "Employee Attendance & HR Management System",
+    desc: "A web-based HR management system for managing employees, departments, positions, attendance, leave requests, and location-based check-in.",
+    tech: ["Laravel", "Blade", "MySQL", "Tailwind CSS"],
+    image: "/images/arsip.png",
+    color: "bg-accent2",
+    githubLink: "https://github.com/MasMuham24",
   },
   {
-    title: "Bahasa Nusantara",
-    desc: "An online dictionary for exploring and preserving Indonesia's diverse regional languages.",
-    tech: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
-    image: "/images/bahasa.png",
-    color: "bg-accent1",
-    demoLink: "https://bahasa-nusantara.vercel.app/",
-    githubLink: "https://github.com/MasMuham24/BahasaNusantara.git",
+    title: "TruthGuard AI",
+    subtitle: "AI-Powered Hoax & Scam Detection",
+    desc: "An AI-powered web application that analyzes messages and classifies potential hoaxes and scams using natural language processing.",
+    tech: ["Laravel", "AI API", "REST API", "MySQL"],
+    image: "/images/truthguard.jpg",
+    color: "bg-accent4",
+    githubLink: "https://github.com/MasMuham24",
   },
   {
-    title: "Installment Car",
-    desc: "A Laravel 11 and React application for car installment simulation with finance calculation.",
-    tech: ["Laravel", "Mysql", "React"],
-    image: "/images/installment.png",
+    title: "NusaAlert",
+    subtitle: "Earthquake Monitoring Application",
+    desc: "A web application that retrieves and displays earthquake information from BMKG and provides useful earthquake monitoring features.",
+    tech: ["Laravel", "BMKG API", "MySQL", "Tailwind CSS"],
+    image: "/images/nusaalert.jpg",
     color: "bg-accent1",
-    demoLink: "#",
-    githubLink: "https://github.com/MasMuham24/Kredit-Mobil.git",
+    githubLink: "https://github.com/MasMuham24",
   },
   {
-    title: "CMS Skada",
-    desc: "A modern Content Management System built with Laravel, Tailwind CSS, MySQL, and JavaScript.",
-    tech: ["Laravel", "PHP", "MySQL", "TailwindCSS"],
+    title: "e-RumahSakit",
+    subtitle: "Hospital REST API",
+    desc: "A REST API for hospital management with authentication, role-based access, and structured medical data management.",
+    tech: ["Laravel", "Sanctum", "REST API", "MySQL"],
+    image: "/images/erumahsakit.png",
+    color: "bg-accent2",
+    githubLink: "https://github.com/MasMuham24/Rest-Api-e-rumahsakit.git",
+  },
+  {
+    title: "CMS-SKADA",
+    subtitle: "School Content Management System",
+    desc: "A modern Content Management System built with Laravel, Tailwind CSS, MySQL, and JavaScript for school administration.",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
     image: "/images/CMS.jpg",
-    color: "bg-accent1",
+    color: "bg-accent3",
     demoLink: "https://skada.nfy.fyi",
     githubLink: "https://github.com/MasMuham24/CMS-SKADA.git",
   },
   {
-    title: "Restful API e-rumahsakit",
-    desc: "A RESTful API for hospital management built with Laravel, Sanctum, and MySQL.",
-    tech: ["Laravel", "PHP", "MySQL"],
-    image: "/images/erumahsakit.png",
+    title: "Installment Car",
+    subtitle: "Car Installment Simulator",
+    desc: "A Laravel 11 and React application for vehicle installment simulation with customizable finance calculations.",
+    tech: ["Laravel", "MySQL", "React"],
+    image: "/images/installment.png",
     color: "bg-accent1",
-    demoLink: "#",
-    githubLink: "https://github.com/MasMuham24/Rest-Api-e-rumahsakit.git",
+    githubLink: "https://github.com/MasMuham24/Kredit-Mobil.git",
+  },
+  {
+    title: "Bahasa Nusantara",
+    subtitle: "Regional Language Explorer",
+    desc: "An online platform for exploring and preserving Indonesia's diverse regional languages and regional vocabularies.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    image: "/images/bahasa.png",
+    color: "bg-accent2",
+    demoLink: "https://bahasa-nusantara.vercel.app/",
+    githubLink: "https://github.com/MasMuham24/BahasaNusantara.git",
   },
   {
     title: "Sistem E-Arsip",
-    desc: "A Laravel 11 web application for secure digital archive and document management.",
-    tech: ["Laravel", "PHP", "MySQL", "Tailwindcss"],
+    subtitle: "Digital Document Archive",
+    desc: "A Laravel 11 web application for secure digital archive organization and categorized document management.",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
     image: "/images/arsip.png",
-    color: "bg-accent1",
+    color: "bg-accent4",
     demoLink: "http://e-arsip.page.gd/",
     githubLink: "https://github.com/MasMuham24/e-arsip.git",
   },
   {
     title: "Car Rental",
-    desc: "A modern and responsive Car Rental Landing Page built with Laravel and Tailwind CSS. This project is designed to showcase a car rental business with a clean user interface, smooth navigation, and mobile-friendly experience.",
-    tech: ["HTML", "CSS", "Javascript"],
+    subtitle: "Vehicle Booking Platform",
+    desc: "A modern and responsive car rental showcase application built to display fleets, vehicle specs, and booking workflows.",
+    tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
     image: "/images/rental.png",
     color: "bg-accent1",
     demoLink: "https://rental27.vercel.app/",
@@ -81,26 +104,28 @@ const projects = [
   },
   {
     title: "Batik Nusantara",
-    desc: "A modern and responsive landing page built with Laravel and Tailwind CSS to showcase Indonesia's rich batik heritage. The website features a clean design, product highlights, company information, and a mobile-friendly user experience.",
-    tech: ["HTML", "CSS", "Javascript"],
+    subtitle: "Cultural Heritage Showcase",
+    desc: "A modern, responsive landing page showcasing Indonesian artisanal batik motifs, cultural history, and product catalogs.",
+    tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/batik.png",
-    color: "bg-accent1",
+    color: "bg-accent2",
     demoLink: "https://batik-nusantara-orpin.vercel.app/",
     githubLink: "https://github.com/MasMuham24/batik-nusantara.git",
   },
   {
-    title: "SiPelajar",
-    desc: "SiPelajar is a web-based School Management System designed to simplify academic administration. It provides separate dashboards and permissions for Administrators, Teachers, and Students, making school management more organized and efficient.",
-    tech: ["Laravel", "MySQL", "Bootstrap"],
-    image: "/images/SiPelajar.png",
-    color: "bg-accent1",
-    demoLink: "https://sipelajar.page.gd",
-    githubLink: "https://github.com/MasMuham24/Sipelajar .git",
-  }, 
+    title: "Cafe Kala Seduh",
+    subtitle: "Café Brand & Menu Website",
+    desc: "A stylish café landing page highlighting specialty coffee menus, store ambience, and visitor information.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/images/cafe.jpg",
+    color: "bg-accent3",
+    demoLink: "https://kalaseduh.vercel.app/",
+    githubLink: "https://github.com/MasMuham24/kalaseduh.git",
+  },
 ];
 
 export const ProjectsPage = () => {
-  useSeo('/projects');
+  useSeo("/projects");
   return (
     <div className="relative selection:bg-accent1 selection:text-border min-h-screen">
       <AnimatedBackground />
@@ -116,20 +141,20 @@ export const ProjectsPage = () => {
           </Link>
           <Link
             to="/"
-            className="brutal-btn bg-white py-1.5 text-xs flex gap-2 items-center"
+            className="brutal-btn bg-white py-1.5 px-4 text-sm flex gap-2 items-center"
           >
-            <ArrowLeft size={14} />
+            <ArrowLeft size={16} /> Back to Home
           </Link>
         </div>
       </nav>
 
-      <main className="pt-20 pb-16 px-4 md:px-8">
+      <main className="pt-24 pb-20 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-8"
+            className="mb-12"
           >
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <div className="h-2 w-12 bg-border brutal-border hidden md:block"></div>
@@ -139,63 +164,81 @@ export const ProjectsPage = () => {
               <div className="h-2 grow bg-border brutal-border hidden md:block"></div>
             </div>
             <p className="text-base sm:text-lg text-border/70 font-medium max-w-2xl">
-              Kumpulan project yang sudah saya buat. Setiap project adalah
-              perjalanan belajar dan eksplorasi teknologi baru.
+              A comprehensive showcase of web applications, full-stack platforms, REST APIs, and practical software solutions built with clean architecture and modern engineering standards.
             </p>
           </motion.div>
 
           {/* Project Grid */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 lg:gap-8">
-            {projects.map((project, index) => (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {allProjects.map((project, index) => (
               <motion.div
-                key={index}
+                key={project.title}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.05 }}
                 className={`brutal-card flex flex-col overflow-hidden group ${project.color}`}
               >
-                <div className="relative h-40 sm:h-48 lg:h-64 overflow-hidden brutal-border-b border-b-4">
-                  <div className="absolute inset-0 bg-border/20 group-hover:bg-transparent transition-colors z-10"></div>
+                <div className="relative h-44 sm:h-52 overflow-hidden brutal-border-b border-b-4 bg-gray-100">
+                  <div className="absolute inset-0 bg-border/10 group-hover:bg-transparent transition-colors z-10"></div>
                   <img
                     src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0"
+                    alt={`${project.title} - ${project.subtitle}`}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-4 sm:p-5 lg:p-6 flex flex-col grow bg-white">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-border/80 font-medium mb-4 grow">
-                    {project.desc}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
-                    {project.tech.map((t) => (
-                      <span
-                        key={t}
-                        className="px-2 py-1 bg-bg brutal-border text-xs sm:text-sm font-bold"
-                      >
-                        {t}
+
+                <div className="p-5 sm:p-6 flex flex-col grow bg-white justify-between">
+                  <div>
+                    <div className="mb-2">
+                      <span className="text-xs font-bold uppercase tracking-wider text-border/60">
+                        {project.subtitle}
                       </span>
-                    ))}
+                      <h2 className="text-xl sm:text-2xl font-bold mt-0.5 text-border">
+                        {project.title}
+                      </h2>
+                    </div>
+
+                    <p className="text-sm sm:text-base text-border/80 font-medium mb-4 leading-relaxed">
+                      {project.desc}
+                    </p>
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <a
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="brutal-btn bg-accent1 flex-1 py-2 text-sm flex gap-2 justify-center items-center"
-                    >
-                      <ExternalLink size={18} /> Demo
-                    </a>
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="brutal-btn bg-white flex-1 py-2 text-sm flex gap-2 justify-center items-center"
-                    >
-                      <FaGithub size={18} /> Code
-                    </a>
+
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-5">
+                      {project.tech.map((t) => (
+                        <span
+                          key={t}
+                          className="px-2.5 py-1 bg-bg brutal-border text-xs font-bold"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="flex gap-3">
+                      {project.demoLink && (
+                        <a
+                          href={project.demoLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="brutal-btn bg-accent1 flex-1 py-2 text-sm flex gap-2 justify-center items-center"
+                        >
+                          <ExternalLink size={16} /> Live Demo
+                        </a>
+                      )}
+                      {project.githubLink && (
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={`brutal-btn bg-white ${project.demoLink ? 'flex-1' : 'w-full'} py-2 text-sm flex gap-2 justify-center items-center`}
+                        >
+                          <FaGithub size={16} /> GitHub
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </motion.div>

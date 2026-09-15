@@ -5,11 +5,11 @@ import { AnimatedBackground } from "./components/ui/AnimatedBackground";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
-import { Services } from "./components/Services";
+import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
+import { Achievements } from "./components/Achievements";
 import { Certifications } from "./components/Certifications";
 import { Skills } from "./components/Skills";
-import { Faq } from "./components/Faq";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { ProjectsPage } from "./pages/ProjectsPage";
@@ -24,11 +24,11 @@ function HomePage() {
       <main>
         <Hero />
         <About />
-        <Services />
+        <Experience />
         <Projects />
+        <Achievements />
         <Certifications />
         <Skills />
-        <Faq />
         <Contact />
       </main>
       <Footer />

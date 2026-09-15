@@ -8,18 +8,18 @@ import { useSeo } from "../utils/seo";
 
 const certs = [
   {
-    name: "3rd Place LKS Web Technology Demak Regency",
-    platform: "Kemendikdasmen",
-    year: "2025",
-    color: "bg-accent2",
-    file: "/certs/lks2.pdf",
-  },
-  {
     name: "1st Place LKS Web Technology Demak Regency",
     platform: "Kemendikdasmen",
     year: "2026",
     color: "bg-accent1",
     file: "/certs/lks1.pdf",
+  },
+  {
+    name: "3rd Place LKS Web Technology Demak Regency",
+    platform: "Kemendikdasmen",
+    year: "2025",
+    color: "bg-accent2",
+    file: "/certs/lks2.pdf",
   },
   {
     name: "Digiup Bootcamp Laravel Web Programmer",
@@ -57,9 +57,9 @@ export const CertificationsPage = () => {
           </Link>
           <Link
             to="/"
-            className="brutal-btn bg-white py-2 text-sm flex gap-2 items-center"
+            className="brutal-btn bg-white py-1.5 px-4 text-sm flex gap-2 items-center"
           >
-            <ArrowLeft size={18} />
+            <ArrowLeft size={16} /> Back to Home
           </Link>
         </div>
       </nav>
@@ -78,8 +78,7 @@ export const CertificationsPage = () => {
               </span>
             </h1>
             <p className="text-lg text-border/70 font-medium max-w-2xl mx-auto text-center mt-6">
-              Sertifikat dan pencapaian yang sudah saya raih selama perjalanan
-              belajar di bidang teknologi.
+              Verified certifications and competition recognition achieved throughout my software development journey.
             </p>
           </motion.div>
 

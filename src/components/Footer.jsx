@@ -7,10 +7,8 @@ export const Footer = () => {
         
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-bold mb-2">Muhammad Syafi'i</h2>
-          <p className="font-medium text-bg/80 max-w-xs">
-            Jasa pembuatan website profesional - landing page, company profile,
-            toko online, web app, dan REST API dengan React, Laravel &amp;
-            MySQL.
+          <p className="font-medium text-bg/80 max-w-sm">
+            Full Stack Developer specializing in Laravel, React, REST APIs, and database-driven web applications.
           </p>
         </div>
 

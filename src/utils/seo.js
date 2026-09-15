@@ -5,21 +5,21 @@ export const SITE_NAME = "Programmergabut.id";
 
 export const seoRoutes = {
   "/": {
-    title: "Jasa Pembuatan Website | Muhammad Syafi'i - Programmergabut.id",
+    title: "Muhammad Syafi'i | Full Stack Developer Portfolio",
     description:
-      "Programmergabut.id - jasa pembuatan website profesional oleh Muhammad Syafi'i, fullstack developer dari Demak. Landing page, company profile, toko online, web app, REST API dengan React, Laravel, MySQL. Juara LKS Web Technology. Hubungi sekarang!",
-    faq: true,
+      "Personal portfolio of Muhammad Syafi'i, Full Stack Developer from Demak, Central Java, Indonesia. Building modern web applications with Laravel, React, REST APIs, and relational databases.",
+    faq: false,
   },
   "/projects": {
-    title: "Portofolio Projek Muhammad Syafi'i | Programmergabut.id",
+    title: "Projects | Muhammad Syafi'i - Full Stack Developer",
     description:
-      "Lihat portofolio projek Muhammad Syafi'i (Programmergabut.id): landing page cafe, REST API, sistem arsip, CMS, sistem sekolah, dan website lainnya yang dibangun dengan React, Laravel, PHP, dan MySQL.",
+      "Explore web applications, full-stack systems, and REST APIs built by Muhammad Syafi'i using Laravel, React, MySQL, and modern tooling.",
     faq: false,
   },
   "/certifications": {
-    title: "Sertifikat & Prestasi LKS Muhammad Syafi'i | Programmergabut.id",
+    title: "Certifications & Achievements | Muhammad Syafi'i",
     description:
-      "Sertifikat dan prestasi Muhammad Syafi'i (Programmergabut.id): Juara 1 LKS (Lomba Kompetensi Siswa) Web Technology Kabupaten Demak, Digiup Bootcamp Laravel, dan Dicoding.",
+      "Certifications and awards of Muhammad Syafi'i: 1st Place LKS Web Technology Demak, Digiup Bootcamp Laravel, and Dicoding credentials.",
     faq: false,
   },
 };

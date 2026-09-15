@@ -1,24 +1,16 @@
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { cn } from "../utils/cn";
 
-const scrollItems = [
+const navItems = [
   { name: "About", to: "about" },
-  { name: "Layanan", to: "services" },
+  { name: "Experience", to: "experience" },
+  { name: "Projects", to: "projects" },
+  { name: "Certifications", to: "certifications" },
   { name: "Skills", to: "skills" },
-  { name: "FAQ", to: "faq" },
   { name: "Contact", to: "contact" },
 ];
-
-const routerItems = [
-  { name: "Projects", to: "/projects" },
-  { name: "Certification", to: "/certifications" },
-];
-
-// Ordered list for display (maintaining visual order in navbar)
-const navOrder = ["About", "Layanan", "Projects", "Certification", "Skills", "FAQ", "Contact"];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,53 +24,29 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const renderNavItem = (name, isMobile = false) => {
-    const scrollItem = scrollItems.find((item) => item.name === name);
-    const routerItem = routerItems.find((item) => item.name === name);
-
-    if (scrollItem) {
-      return (
-        <ScrollLink
-          key={scrollItem.name}
-          to={scrollItem.to}
-          smooth={true}
-          duration={500}
-          spy={true}
-          activeClass={
-            isMobile
-              ? "bg-accent2"
-              : "bg-accent2 shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] translate-x-[-2px] translate-y-[-2px]"
-          }
-          onClick={isMobile ? () => setIsOpen(false) : undefined}
-          className={
-            isMobile
-              ? "px-4 py-3 font-bold brutal-border bg-bg text-center cursor-pointer hover:bg-accent2 transition-all active:translate-y-1"
-              : "px-4 py-2 font-bold brutal-border bg-white cursor-pointer hover:bg-accent2 transition-all hover:shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] hover:-translate-y-1"
-          }
-        >
-          {scrollItem.name}
-        </ScrollLink>
-      );
-    }
-
-    if (routerItem) {
-      return (
-        <RouterLink
-          key={routerItem.name}
-          to={routerItem.to}
-          onClick={isMobile ? () => setIsOpen(false) : undefined}
-          className={
-            isMobile
-              ? "px-4 py-3 font-bold brutal-border bg-bg text-center cursor-pointer hover:bg-accent2 transition-all active:translate-y-1 block"
-              : "px-4 py-2 font-bold brutal-border bg-white cursor-pointer hover:bg-accent2 transition-all hover:shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] hover:-translate-y-1"
-          }
-        >
-          {routerItem.name}
-        </RouterLink>
-      );
-    }
-
-    return null;
+  const renderNavItem = (item, isMobile = false) => {
+    return (
+      <ScrollLink
+        key={item.name}
+        to={item.to}
+        smooth={true}
+        duration={500}
+        spy={true}
+        activeClass={
+          isMobile
+            ? "bg-accent2"
+            : "bg-accent2 shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] translate-x-[-2px] translate-y-[-2px]"
+        }
+        onClick={isMobile ? () => setIsOpen(false) : undefined}
+        className={
+          isMobile
+            ? "px-4 py-3 font-bold brutal-border bg-bg text-center cursor-pointer hover:bg-accent2 transition-all active:translate-y-1"
+            : "px-4 py-2 font-bold brutal-border bg-white cursor-pointer hover:bg-accent2 transition-all hover:shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] hover:-translate-y-1"
+        }
+      >
+        {item.name}
+      </ScrollLink>
+    );
   };
 
   return (
@@ -99,7 +67,7 @@ export const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
-          {navOrder.map((name) => renderNavItem(name, false))}
+          {navItems.map((item) => renderNavItem(item, false))}
         </div>
 
         {/* Mobile Toggle */}
@@ -114,7 +82,7 @@ export const Navbar = () => {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white brutal-border border-x-0 border-t-0 p-4 flex flex-col gap-4 shadow-brutalLg">
-          {navOrder.map((name) => renderNavItem(name, true))}
+          {navItems.map((item) => renderNavItem(item, true))}
         </div>
       )}
     </nav>

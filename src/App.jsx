@@ -6,11 +6,11 @@ import { Hero } from './components/Hero';
 import { useSeo } from './utils/seo';
 
 const About = lazy(() => import('./components/About').then(m => ({ default: m.About })));
-const Services = lazy(() => import('./components/Services').then(m => ({ default: m.Services })));
+const Experience = lazy(() => import('./components/Experience').then(m => ({ default: m.Experience })));
 const Projects = lazy(() => import('./components/Projects').then(m => ({ default: m.Projects })));
+const Achievements = lazy(() => import('./components/Achievements').then(m => ({ default: m.Achievements })));
 const Certifications = lazy(() => import('./components/Certifications').then(m => ({ default: m.Certifications })));
 const Skills = lazy(() => import('./components/Skills').then(m => ({ default: m.Skills })));
-const Faq = lazy(() => import('./components/Faq').then(m => ({ default: m.Faq })));
 const Contact = lazy(() => import('./components/Contact').then(m => ({ default: m.Contact })));
 const Footer = lazy(() => import('./components/Footer').then(m => ({ default: m.Footer })));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage').then(m => ({ default: m.ProjectsPage })));
@@ -26,11 +26,11 @@ function HomePage() {
         <Hero />
         <Suspense fallback={<div className="min-h-screen" />}>
           <About />
-          <Services />
+          <Experience />
           <Projects />
+          <Achievements />
           <Certifications />
           <Skills />
-          <Faq />
           <Contact />
         </Suspense>
       </main>
