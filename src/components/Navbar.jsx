@@ -61,7 +61,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-2xl font-bold brutal-border bg-accent1 px-4 py-1 inline-block -rotate-2 hover:rotate-0 transition-transform cursor-pointer shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
           <ScrollLink to="hero" smooth={true} duration={500}>
-            Programmergabut.id
+            Programmergabut
           </ScrollLink>
         </div>
 

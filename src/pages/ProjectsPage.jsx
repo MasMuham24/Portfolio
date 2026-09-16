@@ -122,6 +122,15 @@ const allProjects = [
     demoLink: "https://kalaseduh.vercel.app/",
     githubLink: "https://github.com/MasMuham24/kalaseduh.git",
   },
+  {
+    title: "MovieBox",
+    subtitle: "Netflix-Inspired Movie Discovery & Watchlist Platform",
+    desc: "A web-based movie discovery platform for exploring movies, searching titles, viewing detailed information, watching trailers, checking streaming availability, and managing personal favorites and watchlists using TMDB API.",
+    tech: ["Laravel", "Blade", "MySQL", "TMDB API", "CSS", "JavaScript"],
+    image: "/images/moviebox.webp",
+    color: "bg-accent2",
+    githubLink: "https://github.com/MasMuham24/MovieBox",
+  },
 ];
 
 export const ProjectsPage = () => {
@@ -164,7 +173,9 @@ export const ProjectsPage = () => {
               <div className="h-2 grow bg-border brutal-border hidden md:block"></div>
             </div>
             <p className="text-base sm:text-lg text-border/70 font-medium max-w-2xl">
-              A comprehensive showcase of web applications, full-stack platforms, REST APIs, and practical software solutions built with clean architecture and modern engineering standards.
+              A comprehensive showcase of web applications, full-stack
+              platforms, REST APIs, and practical software solutions built with
+              clean architecture and modern engineering standards.
             </p>
           </motion.div>
 
@@ -233,7 +244,7 @@ export const ProjectsPage = () => {
                           href={project.githubLink}
                           target="_blank"
                           rel="noreferrer"
-                          className={`brutal-btn bg-white ${project.demoLink ? 'flex-1' : 'w-full'} py-2 text-sm flex gap-2 justify-center items-center`}
+                          className={`brutal-btn bg-white ${project.demoLink ? "flex-1" : "w-full"} py-2 text-sm flex gap-2 justify-center items-center`}
                         >
                           <FaGithub size={16} /> GitHub
                         </a>

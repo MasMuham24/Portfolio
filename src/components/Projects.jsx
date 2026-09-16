@@ -21,7 +21,7 @@ export const featuredProjects = [
     tech: ["Laravel", "Blade", "MySQL", "Tailwind CSS"],
     image: "/images/arsip.png",
     color: "bg-accent2",
-    githubLink: "https://github.com/MasMuham24",
+    githubLink: "https://github.com/MasMuham24/WorkTrack-HRIS",
   },
   {
     title: "TruthGuard AI",
@@ -30,7 +30,7 @@ export const featuredProjects = [
     tech: ["Laravel", "AI API", "REST API", "MySQL"],
     image: "/images/truthguard.jpg",
     color: "bg-accent4",
-    githubLink: "https://github.com/MasMuham24",
+    githubLink: "https://github.com/MasMuham24/TruthGuard-AI",
   },
   {
     title: "NusaAlert",
@@ -39,7 +39,7 @@ export const featuredProjects = [
     tech: ["Laravel", "BMKG API", "MySQL", "Tailwind CSS"],
     image: "/images/nusaalert.jpg",
     color: "bg-accent1",
-    githubLink: "https://github.com/MasMuham24",
+    githubLink: "https://github.com/MasMuham24/NusaAlert",
   },
   {
     title: "e-RumahSakit",
@@ -60,6 +60,7 @@ export const featuredProjects = [
     demoLink: "https://skada.nfy.fyi",
     githubLink: "https://github.com/MasMuham24/CMS-SKADA.git",
   },
+
 ];
 
 export const Projects = () => {
@@ -75,7 +76,8 @@ export const Projects = () => {
         </div>
 
         <p className="text-base sm:text-lg text-border/70 font-medium max-w-2xl mb-12">
-          Production-oriented web applications and backend systems built with Laravel, React, REST APIs, and relational databases.
+          Production-oriented web applications and backend systems built with
+          Laravel, React, REST APIs, and relational databases.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -143,7 +145,7 @@ export const Projects = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noreferrer"
-                        className={`brutal-btn bg-white ${project.demoLink ? 'flex-1' : 'w-full'} py-2 text-sm flex gap-2 justify-center items-center`}
+                        className={`brutal-btn bg-white ${project.demoLink ? "flex-1" : "w-full"} py-2 text-sm flex gap-2 justify-center items-center`}
                       >
                         <FaGithub size={16} /> GitHub
                       </a>
@@ -166,7 +168,8 @@ export const Projects = () => {
             to="/projects"
             className="brutal-btn bg-border text-white px-8 py-3 text-lg font-bold flex items-center gap-3 hover:-translate-y-1 transition-transform"
           >
-            View All Projects ({featuredProjects.length}+) <ArrowRight size={20} />
+            View All Projects ({featuredProjects.length}+){" "}
+            <ArrowRight size={20} />
           </Link>
         </motion.div>
       </div>

@@ -12,11 +12,6 @@ export const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-accent1 brutal-border text-sm font-bold shadow-[2px_2px_0px_0px_rgba(17,17,17,1)] -rotate-1">
-            <span>Portfolio</span>
-            <span>&bull;</span>
-            <span>Muhammad Syafi'i</span>
-          </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
             Full Stack{" "}
