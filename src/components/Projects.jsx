@@ -15,13 +15,13 @@ export const featuredProjects = [
     githubLink: "https://github.com/MasMuham24/Sipelajar",
   },
   {
-    title: "e-Absensi / HRIS",
-    subtitle: "Employee Attendance & HR Management System",
+    title: "WorkTrack-HRIS",
+    subtitle: "Human Resource Management System",
     desc: "A web-based HR management system for managing employees, departments, positions, attendance, leave requests, and location-based check-in.",
     tech: ["Laravel", "Blade", "MySQL", "Tailwind CSS"],
-    image: "/images/arsip.png",
+    image: "/images/worktrack.jpg",
     color: "bg-accent2",
-    githubLink: "https://github.com/MasMuham24/WorkTrack-HRIS",
+    githubLink: "https://github.com/MasMuham24/WorkTrack-HRIS.git",
   },
   {
     title: "TruthGuard AI",
@@ -60,7 +60,6 @@ export const featuredProjects = [
     demoLink: "https://skada.nfy.fyi",
     githubLink: "https://github.com/MasMuham24/CMS-SKADA.git",
   },
-
 ];
 
 export const Projects = () => {

@@ -18,13 +18,13 @@ const allProjects = [
     githubLink: "https://github.com/MasMuham24/Sipelajar",
   },
   {
-    title: "e-Absensi / HRIS",
-    subtitle: "Employee Attendance & HR Management System",
+    title: "WorkTrack-HRIS",
+    subtitle: "Human Resource Management System",
     desc: "A web-based HR management system for managing employees, departments, positions, attendance, leave requests, and location-based check-in.",
     tech: ["Laravel", "Blade", "MySQL", "Tailwind CSS"],
-    image: "/images/arsip.png",
+    image: "/images/worktrack.jpg",
     color: "bg-accent2",
-    githubLink: "https://github.com/MasMuham24",
+    githubLink: "https://github.com/MasMuham24/WorkTrack-HRIS.git",
   },
   {
     title: "TruthGuard AI",
@@ -33,7 +33,7 @@ const allProjects = [
     tech: ["Laravel", "AI API", "REST API", "MySQL"],
     image: "/images/truthguard.jpg",
     color: "bg-accent4",
-    githubLink: "https://github.com/MasMuham24",
+    githubLink: "https://github.com/MasMuham24/TruthGuard-AI.git",
   },
   {
     title: "NusaAlert",
